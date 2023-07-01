@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/inconchocolatepng">
+    <link rel="stylesheet" href="style_naranja.css">
+
+    <title>CHOCODIS</title>
+</head>
+
+<body>
+
+    <section id="hero">
+
+        <div id="container">
+            <p>chocolates Chocodis 🍫 </p>
+
+            <h1 id="titulo">Lista de ideas 💡 </h1>
+
+            <h2> Ideas de Sabores:</h2>
+            <br>
+            <br>
+          
+            <div class="search">
+                <form >
+                    <input type="text" placeholder="Agregar idea de sabor...">
+                    <button class="boton" class="btn-add">+</button>
+                </form>
+            </div>
+            <br>
+            <br>
+            <div class="li-container">
+                <ul id="lista_toppings">
+                    <li class="topping fondo-naranja" id="naranja">Naranja 🍊 </li>
+                    <li class="topping fondo-marron">Menta 🌿 </li>
+                    <li class="topping fondo-naranja" id="manjar">Manjar 🐮</li>
+                    <li class="topping fondo-marron">Blanco  ⚪ </li>
+                </ul>
+
+            </div>
+           
+        </div>
+        <br>
+        <button class="boton" id="open">MAS INFO</button>
+        <br>
+        <br>
+        
+        <div class="modal-container" id="modal_container">
+            <div class="modal">
+                <h1>Chocolatier Chocodis</h1>
+                <p>Chocolatier Chocodis es reconocido mundialmente por su dedicación artesanal y su compromiso con la calidad excepcional. Cada pieza de chocolate que producen es una obra maestra elaborada con los ingredientes más finos y seleccionados cuidadosamente de diferentes regiones del mundo.</p>
+                <br>
+                <p>Como empresa esta vez decidimos inovar y escuchar opiniones de nuestros clientes y acoges propuestas de sabores</p>
+                <br>
+                <button id="close" class="boton">Cerrar</button>
+            </div>
+        </div>
+
+
+
+
+        <section id="footer">
+            <footer>
+                <div class="container">
+                    <p>&copy;Benjamin Morales 2023</p>
+                </div>
+            </footer>
+        </section>
+      
+    </section>
+
+    <script src="modal.js"></script>
+    <script src="dom.js"></script>
+    <script src="sabores.js"></script>
+  
+    
+</body>
+</html>

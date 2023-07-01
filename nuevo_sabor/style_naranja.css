@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Carter+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/fondochocolate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+#hero{
+    color: white;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+
+}
+#hero p{
+    border: 2px 2px black;
+}
+
+#container{
+    display: flex;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 80vh;
+    max-width: 650px;
+    background-image: url(img/fondochoco.png);
+    border: 4px solid white;
+    box-shadow:  15px 15px 15px 15px black;
+}
+#container p{
+    font-size: 1.5rem;
+}
+.boton{
+    background-color: #863d0c;
+    border: 0%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px;
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Carter One', cursive;
+}
+
+.modal-container{
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+   opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+.modal{
+    background-image: url(img/fondochoco.png);
+    border: 4px solid white;
+    width: 850px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+
+}
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText  {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+
+
+.hide{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Carter One', cursive;
+    width: 100%;
+    margin: 20px 10px;
+}
+.topping {
+    font-size: 2rem;
+    font-family: 'Carter One', cursive;
+    border-radius: 15px;
+    padding: 20px 80px 20px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 15px 0;
+}
+
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 20px 80px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+    display: flex;
+}
+
+input{
+    padding: 15px 10px;
+    outline: none;
+    width: 400px;
+    
+}
+
+.fondo-marron{
+    background-color: #863d0c;
+}
+.fondo-marron:hover{
+    background-color: #ff6600;
+    border-color: 3px color white;
+}
+
+.fondo-naranja{
+    background-color: #9b5318;
+}
+.fondo-naranja:hover{
+    background-color: orangered
+}
+ul{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+}
+  
+  li {
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #e31746;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+  }
+  
+  .btn-delete:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+  }
+  
+  .btn-add {
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    background-color: teal;
+    font-size: 1.4rem;
+    outline: none;
+  }
+  
+  .btn-add:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+  }
+  
+  .empty {
+    color: darkslategrey;
+  }
+
+

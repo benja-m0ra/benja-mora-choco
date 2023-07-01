@@ -1,0 +1,200 @@
+:root {
+    --primary: #694113;
+    --secondary: #D33F49;
+    --light: #e6a672;
+    --dark: #000;
+    --diabled: #e7e7e7;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/fondochocolate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 35px 80px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText  {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+.orderButton:hover{
+    background-color:  red;
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(white);
+}
+
+.boton{
+    background-color: #863d0c;
+    border: 0%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px;
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Carter One', cursive;
+}
+
+.boton_ani{
+
+    background-color: #863d0c;
+    border: 0%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px;
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Carter One', cursive;
+
+    animation: shaking 2s infinite;
+}
+
+
+@keyframes shaking
+{
+    10%{
+        transform: scale(1.50) rotate(-5deg);
+    }
+    20%{
+        transform: scale(1.50) rotate(5deg);
+    }
+    30%{
+        transform: scale(1.50) rotate(-5deg);
+    }
+    40%{
+        transform: none;
+    }
+}
+
+
+.modal-container{
+    display: flex;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+   opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+.modal{
+    background-image: url(img/fondochoco.png);
+    border: 4px solid white;
+    width: 850px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+
+}
